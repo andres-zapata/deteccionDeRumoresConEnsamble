@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+    react-app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: react-application
+        ports:
+        - "4200:4200"
