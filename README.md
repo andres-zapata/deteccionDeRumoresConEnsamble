@@ -21,7 +21,7 @@ En el caso de ocupar Docker, se requiere que se descargue e instale antes de eje
 ## Descarga de Dataset
 
 Para el entrenamiento de las maquinas de aprendizaje y los ensambles se requiere que se descargue el dataaset "Twitter16" que se puede encontrar en la siguiente direccion: https://drive.google.com/file/d/1o5Nx0wGNQcqEDz1jiiB9W3dbQyaeE_hG/view?usp=sharing. Una vez ya descargado se debe descomprimir y que los contenidos y copiarlos dentro de la carpeta "backend" de este proyecto.
-## Instalación de forma Local
+## Instalación de forma local
 
 ### Preparacion ejecucion de backend
 Una vez descargado este repositorio y el desplegado el dataset, desde la consola de comando ir a la carpeta "backend" e instalar los requerimientos:
