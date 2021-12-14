@@ -87,6 +87,6 @@ Una vez hecho esto se puede pasar a entrenar los máquinas de aprendizaje en la 
 
 Finalmente, se puede entrenar el ensamble de la misma forma, yendo a la última sección, eligiendo la técnica de ensamble que se desea utilizar y presionar el botón "entrenar" y esperar a que se carguen las imagenes a la derecha de la sección que indicara que se ha entrenado el ensamble.
 
-#### Precauciones
+## Precauciones
 
 Se debe tener en cuenta que los pasos deben seguirse en secuencia para que el ensamble sea entrenado correctamente. También tener en cuenta que al ejecutar el backend con docker puede que se demore unos minutos.
