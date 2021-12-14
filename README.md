@@ -8,7 +8,7 @@ En este repositorio se presenta la implementacion del trabajo, en donde se tiene
 
 Este proyecto se puede ejecutar de 2 formas, las cuales son:
 - Instalacion y ejecucion local.
-- Ejecucion a traves de Dockers.
+- Ejecucion a traves de Docker.
 
 ## Requerimientos
 Se requiere tener instalado:
@@ -16,7 +16,7 @@ Se requiere tener instalado:
 - NodeJs.
 - Angular.
 
-En el caso de ocupar Dockers, se requiere que se descargue e instale antes de ejecutar cualquier paso. Este programa se puede encontrar en https://www.docker.com/get-started.
+En el caso de ocupar Docker, se requiere que se descargue e instale antes de ejecutar cualquier paso. Este programa se puede encontrar en https://www.docker.com/get-started.
 
 ## Descarga de Dataset
 
@@ -24,9 +24,64 @@ Para el entrenamiento de las maquinas de aprendizaje y los ensambles se requiere
 
 ## Instalacion de forma Local
 
-### Preparacion backend
+### Preparacion ejecucion de backend
 Una vez descargado este repositorio y el desplegado el dataset, desde la consola de comando ir a la carpeta "backend" e instalar los requerimientos:
 ```bash
 cd backend
 pip install -r requirements.txt
 ```
+
+Una vez instalados los requerimientos ya se puede ejecutar el backend:
+```bash
+python main.py
+```
+Una vez corriendo el backend se pueden hacer llamadas post a las rutas indicadas en main.py para entrenar cargar el dataset, entrenar los modelos y entrenar los ensambles.
+
+### Preparacion ejecucion de frontend
+No es necesario tener descargado el dataset para desplegar el frontend, tan solo desde la consola de comando ir a la carpeta "interfaz" e instalar los modulos de node:
+```bash
+cd interfaz
+npm install
+```
+Una vez instalados los requerimientos ya se puede ejecutar el frontend:
+```bash
+npm start
+```
+
+Lo que deberia cargar una pagina web en http://localhost:4200/. Esta pagina web funciona como una interfaz para facilitar el uso del backend.
+
+
+## Instalacion y ejecucion con Docker
+
+Para la ejecucion del proyecto con Docker se debe primero tener instalado el programa Docker, una vez instalado y tenerlo corriendo, desde la consola de comandos se debe ir a la carpeta "backend" y construir la imagen:
+```bash
+cd backend
+docker build -t backend .
+```
+Una vez construida la imagen se puede ejecutar el contenedor:
+```bash
+docker run -p 5000:5000 backend
+```
+
+Para ejecutar el frontend son los mismos pasos. Desde la consola de comandos se debe ir a la carpeta "interfaz" y construir la imagen:
+```bash
+cd interfaz
+docker build -t interfaz .
+```
+Una vez construida la imagen se puede ejecutar el contenedor:
+```bash
+docker run -p 4200:4200 interfaz
+```
+Esto ya deberia dejar corriendo el backend y el frontend los cuales se pueden acceder desde http://localhost:5000/ y http://localhost:4200/ respectivamente.
+
+## Manejo de Interfaz
+
+La interfaz deberia verse como:
+
+<img src='imgs/edges2cats.jpg' width="400px"/>
+
+En donde se pueden entrenar las máquinas de aprendizaje y ensambles de forma secuencial.
+
+En la parte superior de la pagina, si antes no se a cargado los tweets, se debe elegir el grupo de preprocesamiento que se quiera aplicar y apretar el boton "cargar" para que se cargue el dataset en el backend y se cree el modelo Word2Vec con el preprocesamiento elegido.
+
+Una vez echo esto se puede pasar a entrenar los modelos en la seccion siguiente, en donde 
