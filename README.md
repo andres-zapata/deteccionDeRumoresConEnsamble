@@ -1,6 +1,6 @@
 # ENSAMBLE DE MODELOS DE MÁQUINAS DE APRENDIZAJE PARA LA DETECCIÓN DE NOTICIAS FALSAS
 
-Manual de usuario para proyecto de título de Andres Zapata "ENSAMBLADO DE MODELOS DE MÁQUINAS DE APRENDIZAJE PARA LA DETECCIÓN DE NOTICIAS FALSAS".
+Manual de usuario para proyecto de título de Andres Zapata "ENSAMBLE DE MODELOS DE MÁQUINAS DE APRENDIZAJE PARA LA DETECCIÓN DE NOTICIAS FALSAS".
 
 Este manual de usuario se encuentra disponible en el repositorio https://github.com/andres-zapata/deteccionDeRumoresConEnsamble.
 
@@ -77,7 +77,8 @@ Esto ya debería dejar corriendo el backend y el frontend los cuales se pueden a
 
 La interfaz debería verse como:
 
-<img src='imgs/edges2cats.jpg' width="400px"/>
+<img src='imgs/imagen1.jpg' width="400px"/>
+<img src='imgs/imagen2.jpg' width="400px"/>
 
 En donde se pueden entrenar las máquinas de aprendizaje y ensambles de forma secuencial.
 
