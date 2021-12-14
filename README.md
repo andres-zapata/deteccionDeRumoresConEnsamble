@@ -78,7 +78,7 @@ Esto ya debería dejar corriendo el backend y el frontend los cuales se pueden a
 La interfaz debería verse como:
 
 <img src='imgs/imagen1.png' width="400px"/>
-<img src='imgs/imagen1.png' width="400px"/>
+<img src='imgs/imagen2.png' width="400px"/>
 
 En donde se pueden entrenar las máquinas de aprendizaje y ensambles de forma secuencial.
 
