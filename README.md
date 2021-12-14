@@ -84,4 +84,10 @@ En donde se pueden entrenar las máquinas de aprendizaje y ensambles de forma se
 
 En la parte superior de la pagina, si antes no se a cargado los tweets, se debe elegir el grupo de preprocesamiento que se quiera aplicar y apretar el boton "cargar" para que se cargue el dataset en el backend y se cree el modelo Word2Vec con el preprocesamiento elegido.
 
-Una vez echo esto se puede pasar a entrenar los modelos en la seccion siguiente, en donde 
+Una vez echo esto se puede pasar a entrenar los maquinas de aprendizaje en la seccion siguiente, en donde se deben elegir los parametros y las maquinas de aprendizaje que se quiera sean parte del ensamble final, luego presionar el boton "entrenar" y esperar a que se carguen las imagenes a la derecha de la seccion que indicara que se han entrenado las maquinas de aprendizaje.
+
+Finalmente, se puede entrenar el ensamble de la misma forma, llendo a la ultima seccion, eligiendo la tecnica de ensamble que se desea utilizar y presionar el boton "entrenar" y esperar a que se carguen las imagenes a la derecha de la seccion que indicara que se ha entrenado el ensamble.
+
+#### Precauciones
+
+Se debe tener en cuenta que los pasos deben seguirse en secuencia para que el ensamble sea entrenado correctamente. Tambien tener en cuenta que al ejecutar el backend con docker puede que se demore unos minutos.
